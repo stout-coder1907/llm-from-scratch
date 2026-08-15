@@ -50,3 +50,6 @@ plt.figure(figsize=(6, 6))
 sns.boxplot(x='online_order', y='rate', data=df)
 plt.title("Rating by Online Order Availability")
 plt.show()
+
+grouped_data = df.groupby("listed_in(type)")['votes'].sum()
+sns.countplot('listed_in(type)', data=df)
