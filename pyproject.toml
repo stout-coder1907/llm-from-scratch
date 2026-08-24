@@ -17,4 +17,5 @@ dependencies = [
 [tool.uv.workspace]
 members = [
     "agentic ai workshop/agenticlangGraph",
+    "projects",
 ]
